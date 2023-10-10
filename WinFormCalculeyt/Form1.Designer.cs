@@ -39,12 +39,12 @@
             buttonn2 = new Button();
             buttonn3 = new Button();
             button0 = new Button();
-            buttonNoqte = new Button();
             buttonToplama = new Button();
             buttonBolme = new Button();
             buttonVurma = new Button();
             buttonCixma = new Button();
             buttonBeraberdir = new Button();
+            Clear = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -167,17 +167,6 @@
             button0.UseVisualStyleBackColor = true;
             button0.Click += button0_Click;
             // 
-            // buttonNoqte
-            // 
-            buttonNoqte.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonNoqte.Location = new Point(136, 500);
-            buttonNoqte.Name = "buttonNoqte";
-            buttonNoqte.Size = new Size(109, 94);
-            buttonNoqte.TabIndex = 11;
-            buttonNoqte.Text = ".";
-            buttonNoqte.UseVisualStyleBackColor = true;
-            buttonNoqte.Click += buttonNoqte_Click;
-            // 
             // buttonToplama
             // 
             buttonToplama.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
@@ -192,9 +181,9 @@
             // buttonBolme
             // 
             buttonBolme.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonBolme.Location = new Point(391, 157);
+            buttonBolme.Location = new Point(136, 500);
             buttonBolme.Name = "buttonBolme";
-            buttonBolme.Size = new Size(100, 86);
+            buttonBolme.Size = new Size(109, 94);
             buttonBolme.TabIndex = 13;
             buttonBolme.Text = "/";
             buttonBolme.UseVisualStyleBackColor = true;
@@ -233,6 +222,18 @@
             buttonBeraberdir.UseVisualStyleBackColor = true;
             buttonBeraberdir.Click += buttonBeraberdir_Click;
             // 
+            // Clear
+            // 
+            Clear.BackColor = Color.IndianRed;
+            Clear.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            Clear.Location = new Point(391, 157);
+            Clear.Name = "Clear";
+            Clear.Size = new Size(100, 88);
+            Clear.TabIndex = 17;
+            Clear.Text = "Clear";
+            Clear.UseVisualStyleBackColor = false;
+            Clear.Click += Clear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -240,12 +241,12 @@
             BackgroundImage = Properties.Resources.simple_calculator_program_in_c1;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(503, 622);
+            Controls.Add(Clear);
             Controls.Add(buttonBeraberdir);
             Controls.Add(buttonCixma);
             Controls.Add(buttonVurma);
             Controls.Add(buttonBolme);
             Controls.Add(buttonToplama);
-            Controls.Add(buttonNoqte);
             Controls.Add(button0);
             Controls.Add(buttonn3);
             Controls.Add(buttonn2);
@@ -277,11 +278,11 @@
         private Button buttonn2;
         private Button buttonn3;
         private Button button0;
-        private Button buttonNoqte;
         private Button buttonToplama;
         private Button buttonBolme;
         private Button buttonVurma;
         private Button buttonCixma;
         private Button buttonBeraberdir;
+        private Button Clear;
     }
 }
